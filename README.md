@@ -9,6 +9,10 @@ The pilot does not aim at results. It checks whether
 2. adherence to Red-Green-Refactor can be checked automatically from git history and test logs,
 3. functional correctness can be measured with an independent (hidden) test suite.
 
+Working on this repository with an AI assistant: rules and boundaries are in `AGENTS.md`
+(read by Codex; Claude Code reads it via `CLAUDE.md`), the decision log and open decisions in
+`docs/DECISIONS.md`.
+
 ## Environment
 
 | Component | Version / value |
