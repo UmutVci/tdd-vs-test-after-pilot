@@ -1,0 +1,4 @@
+# Shell scripts must keep LF line endings to run in Git Bash / Linux.
+*.sh text eol=lf
+*.py text eol=lf
+*.md text eol=lf

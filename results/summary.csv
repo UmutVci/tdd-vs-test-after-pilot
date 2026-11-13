@@ -1,0 +1,7 @@
+run,condition,model,hidden_passed,hidden_total,hidden_pass_rate,agent_tests,agent_tests_all_pass,line_coverage,branch_coverage,process_compliant,violations,warnings,tdd_cycles,tdd_compliant_cycles,tdd_tests_never_red,commits,test_runs_logged,wall_seconds,duration_ms,num_turns,total_cost_usd,result_subtype,timed_out
+tdd_1,tdd,claude-sonnet-5-5,36,36,1.0,25,True,1.0,1.0,False,1,0,8,7,17,18,17,86,84425,39,0.17113540000000002,success,False
+tdd_2,tdd,claude-sonnet-5-5,36,36,1.0,23,True,1.0,1.0,False,5,1,9,7,15,19,20,76,74641,15,0.09638359999999999,success,False
+tdd_3,tdd,claude-sonnet-5-5,36,36,1.0,23,True,1.0,1.0,False,1,3,7,6,13,16,15,54,51875,11,0.07549969999999999,success,False
+test_after_1,test_after,claude-sonnet-5-5,36,36,1.0,47,True,1.0,1.0,True,0,0,,,,3,1,24,22315,9,0.05166210000000001,success,False
+test_after_2,test_after,claude-sonnet-5-5,36,36,1.0,43,True,1.0,1.0,True,0,0,,,,3,1,25,22884,9,0.0559707,success,False
+test_after_3,test_after,claude-sonnet-5-5,36,36,1.0,43,True,1.0,1.0,True,0,0,,,,3,1,19,16365,6,0.0356287,success,False

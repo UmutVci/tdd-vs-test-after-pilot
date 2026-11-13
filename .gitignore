@@ -1,0 +1,13 @@
+# Local environment
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+
+# Run artefacts (full transcripts and copied agent workspaces, each with its own .git)
+runs/
+runs_archive/
+
+# Console logs of the pilot (contain local paths; numbers are in results/report.md)
+results/*_console.log
