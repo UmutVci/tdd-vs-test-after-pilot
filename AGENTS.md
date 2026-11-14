@@ -6,10 +6,19 @@ Claude Code reads this file through `CLAUDE.md`. The history behind these rules 
 
 ## Project
 
-Experiment setup for a Hausarbeit (seminar paper). Research question:
+Experiment setup for a Hausarbeit (seminar paper). Research question (official wording, German;
+use it verbatim wherever the question is quoted):
 
-> How does the functional correctness of code produced by an AI coding agent in a TDD workflow differ
-> from a Test-After workflow, measured with an independent test suite?
+> Inwieweit unterscheidet sich die funktionale Korrektheit von Code, den ein KI-Coding-Agent in einem
+> TDD-Workflow erzeugt, von der eines Test-After-Workflows, gemessen an einer unabhängigen, vorab
+> definierten Testsuite?
+
+English translation: To what extent does the functional correctness of code produced by an AI coding
+agent in a TDD workflow differ from that of a Test-After workflow, measured against an independent,
+predefined test suite?
+
+Methodological reference agreed with the supervisor: Wohlin et al. (2024), *Experimentation in
+Software Engineering* (experiment planning and validity discussion).
 
 A coding agent (headless Claude Code) implements `parse_duration` (`task/SPEC.md`) under one of two
 workflows (`prompts/tdd.md`, `prompts/test_after.md`). The scripts check whether the agent followed its

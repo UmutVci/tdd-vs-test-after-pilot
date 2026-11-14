@@ -79,6 +79,21 @@ Add new entries at the end of "Log"; update "Open decisions" when one is settled
 - Commit identity for this repository: `UmutVci` with the GitHub noreply address (the global git
   identity is a work account and must not appear in this public repository).
 
+### 2026-11-14 - Research question and commitments to the supervisor
+
+- Official research question (German, agreed with the supervisor): "Inwieweit unterscheidet sich die
+  funktionale Korrektheit von Code, den ein KI-Coding-Agent in einem TDD-Workflow erzeugt, von der eines
+  Test-After-Workflows, gemessen an einer unabhängigen, vorab definierten Testsuite?" README and
+  AGENTS.md updated.
+- Plan communicated to the supervisor before the pilot: same agent, model and settings for both
+  workflows; identical requirements and fixed interface; hidden evaluation tests run after each run;
+  one commit per TDD phase and logged test runs; check whether hooks can enforce the order; every run
+  in a new session with a fresh repository copy (possibly in a container); then several tasks of
+  different complexity and requirement detail, with repeated runs; methodology after Wohlin et al.
+  (2024).
+- Not yet done in the pilot (stated in the e-mail with the pilot results): enforcing the TDD order
+  with hooks, running in a container.
+
 ## Open decisions (before the main experiment)
 
 1. **Agent configuration:** keep v2 for all runs of the main experiment (recommended); no mixing.
@@ -93,3 +108,11 @@ Add new entries at the end of "Log"; update "Open decisions" when one is settled
 5. **Freeze the checker rules** (pre-registration) and decide whether non-compliant TDD runs stay in
    the analysis (intention-to-treat) or are analysed separately.
 6. Optional: check "minimal green" more strictly (e.g. mutation testing per cycle).
+7. **Hooks:** evaluate whether Claude Code hooks can enforce the TDD order (e.g. block edits to `src/`
+   until a failing test is logged). Note: `--safe-mode` disables hooks, so enforcing hooks would need
+   a different isolation setup. Enforcing the order changes the treatment (process is forced instead
+   of measured) and must be decided before data collection.
+8. **Container:** decide whether runs move into a container (stronger isolation than v2, where Bash
+   is not confined to the workspace).
+9. **Task set:** several tasks of different complexity and requirement detail, as promised to the
+   supervisor; each needs its own SPEC, template stub and hidden tests.

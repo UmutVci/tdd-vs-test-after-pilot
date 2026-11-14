@@ -1,8 +1,14 @@
 # TDD vs. Test-After pilot
 
-Pilot setup for the research question: *How does the functional correctness of code produced
-by an AI coding agent in a TDD workflow differ from a Test-After workflow, measured with an
-independent test suite?*
+Pilot setup for the research question (official wording, German):
+
+> *Inwieweit unterscheidet sich die funktionale Korrektheit von Code, den ein KI-Coding-Agent in einem
+> TDD-Workflow erzeugt, von der eines Test-After-Workflows, gemessen an einer unabhängigen, vorab
+> definierten Testsuite?*
+
+English: *To what extent does the functional correctness of code produced by an AI coding agent in a
+TDD workflow differ from that of a Test-After workflow, measured against an independent, predefined
+test suite?*
 
 The pilot does not aim at results. It checks whether
 1. both workflows can be applied reliably with a coding agent,
